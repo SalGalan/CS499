@@ -1,0 +1,17 @@
+{ 
+  organization(login: "rails") {
+    repositories(first: 50) {
+      pageInfo{endCursor}
+      nodes {
+        name
+        pullRequests(first:50){
+        nodes{
+          number
+          comments(first:100){nodes {id} }
+          }
+         }
+        }
+       }
+      }
+         
+        
